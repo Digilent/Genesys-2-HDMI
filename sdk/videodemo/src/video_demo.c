@@ -38,6 +38,7 @@
 #include "xil_types.h"
 #include "xil_cache.h"
 #include "xparameters.h"
+#include "sleep.h"
 
 /*
  * XPAR redefines
@@ -266,7 +267,7 @@ void DemoRun()
 			break;
 		default :
 			xil_printf("\n\rInvalid Selection");
-			MB_Sleep(50);
+			usleep(50000);
 		}
 	}
 
@@ -364,7 +365,7 @@ void DemoChangeRes()
 			break;
 		default :
 			xil_printf("\n\rInvalid Selection");
-			MB_Sleep(50);
+			usleep(50000);
 		}
 		if (status == XST_DMA_ERROR)
 		{
