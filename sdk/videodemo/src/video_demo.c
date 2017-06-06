@@ -1,6 +1,6 @@
 /************************************************************************/
 /*																		*/
-/*	video_demo.c	--	ZYBO Video demonstration 						*/
+/*	video_demo.c	--	Genesys 2 HDMI Demonstration 					*/
 /*																		*/
 /************************************************************************/
 /*	Author: Sam Bobrowicz												*/
@@ -9,8 +9,8 @@
 /*  Module Description: 												*/
 /*																		*/
 /*		This file contains code for running a demonstration of the		*/
-/*		Video input and output capabilities on the ZYBO. It is a good	*/
-/*		example of how to properly use the display_ctrl and				*/
+/*		Video input and output capabilities on the Genesys 2. It is a	*/
+/*		good example of how to properly use the display_ctrl and		*/
 /*		video_capture drivers.											*/
 /*																		*/
 /*																		*/
@@ -279,7 +279,7 @@ void DemoPrintMenu()
 	xil_printf("\x1B[H"); //Set cursor to top left of terminal
 	xil_printf("\x1B[2J"); //Clear terminal
 	xil_printf("**************************************************\n\r");
-	xil_printf("*                ZYBO Video Demo                 *\n\r");
+	xil_printf("*                Genesys 2 HDMI Demo             *\n\r");
 	xil_printf("**************************************************\n\r");
 	xil_printf("*Display Resolution: %28s*\n\r", dispCtrl.vMode.label);
 	printf("*Display Pixel Clock Freq. (MHz): %15.3f*\n\r", dispCtrl.pxlFreq);
@@ -379,7 +379,7 @@ void DemoCRMenu()
 	xil_printf("\x1B[H"); //Set cursor to top left of terminal
 	xil_printf("\x1B[2J"); //Clear terminal
 	xil_printf("**************************************************\n\r");
-	xil_printf("*                ZYBO Video Demo                 *\n\r");
+	xil_printf("*                Genesys 2 HDMI Demo             *\n\r");
 	xil_printf("**************************************************\n\r");
 	xil_printf("*Current Resolution: %28s*\n\r", dispCtrl.vMode.label);
 	printf("*Pixel Clock Freq. (MHz): %23.3f*\n\r", dispCtrl.pxlFreq);
